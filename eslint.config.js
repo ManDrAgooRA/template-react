@@ -45,31 +45,51 @@ export default tseslint.config(
       "import/order": [
         "error",
         {
-          groups: ["builtin", "external", "internal", "index", "type", ["sibling", "parent"]],
+          groups: ["builtin", "external", "internal", "parent", "sibling", "index", "type", "object"],
           pathGroups: [
             {
               pattern: "@pages/**",
-              group: "index",
+              group: "internal",
               position: "after",
             },
             {
               pattern: "@components/**",
-              group: "index",
+              group: "internal",
               position: "after",
             },
             {
               pattern: "@hooks/**",
-              group: "index",
+              group: "internal",
               position: "after",
             },
             {
               pattern: "@constants/**",
-              group: "index",
+              group: "internal",
               position: "after",
             },
             {
               pattern: "@utils/**",
-              group: "index",
+              group: "internal",
+              position: "after",
+            },
+            {
+              pattern: "./*.module.scss",
+              group: "type",
+              position: "after",
+            },
+            {
+              pattern: "**/*.scss",
+              group: "type",
+              position: "after",
+            },
+            {
+              pattern: "**/*.css",
+              group: "type",
+              position: "after",
+            },
+            {
+              pattern: "./*.module.scss",
+              group: "sibling",
               position: "after",
             },
           ],
