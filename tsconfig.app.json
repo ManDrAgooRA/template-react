@@ -24,10 +24,12 @@
 
     "baseUrl": ".",
     "paths": {
+      "@pages/*": ["src/pages/*"],
       "@components/*": ["src/components/*"],
       "@constants/*": ["src/utils/constants/*"],
       "@hooks/*": ["src/utils/hooks/*"],
-      "@interfaces/*": ["src/utils/interfaces/*"]
+      "@interfaces/*": ["src/utils/interfaces/*"],
+      "@utils/*": ["src/utils/*"]
     }
   },
   "include": ["src"]
