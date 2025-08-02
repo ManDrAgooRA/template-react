@@ -6,12 +6,17 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@pages": path.resolve(__dirname, "./src/pages"),
+      "@apis": path.resolve(__dirname, "./src/apis"),
+      "@assets": path.resolve(__dirname, "./src/assets"),
       "@components": path.resolve(__dirname, "./src/components"),
+      "@pages": path.resolve(__dirname, "./src/pages"),
+      "@redux": path.resolve(__dirname, "./src/redux"),
+      "@routers": path.resolve(__dirname, "./src/routers"),
+      "@services": path.resolve(__dirname, "./src/services"),
+      "@utils": path.resolve(__dirname, "./src/utils"),
       "@constants": path.resolve(__dirname, "./src/utils/constants"),
       "@hooks": path.resolve(__dirname, "./src/utils/hooks"),
-      "@interfaces": path.resolve(__dirname, "./src/utils/interfaces"),
-      "@utils": path.resolve(__dirname, "./src/utils"),
+      "@widgets": path.resolve(__dirname, "./src/widgets"),
     },
   },
 });

@@ -24,12 +24,17 @@
 
     "baseUrl": ".",
     "paths": {
-      "@pages/*": ["src/pages/*"],
+      "@api/*": ["src/apis/*"],
+      "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@redux/*": ["src/redux/*"],
+      "@routers/*": ["src/routers/*"],
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
       "@constants/*": ["src/utils/constants/*"],
       "@hooks/*": ["src/utils/hooks/*"],
-      "@interfaces/*": ["src/utils/interfaces/*"],
-      "@utils/*": ["src/utils/*"]
+      "@widgets/*": ["src/widgets/*"]
     }
   },
   "include": ["src"]
