@@ -58,6 +58,26 @@ export default tseslint.config(
               position: "after",
             },
             {
+              pattern: "@widgets/**",
+              group: "internal",
+              position: "after",
+            },
+            {
+              pattern: "@services/**",
+              group: "internal",
+              position: "after",
+            },
+            {
+              pattern: "@routers/**",
+              group: "internal",
+              position: "after",
+            },
+            {
+              pattern: "@redux/**",
+              group: "internal",
+              position: "after",
+            },
+            {
               pattern: "@hooks/**",
               group: "internal",
               position: "after",
@@ -69,6 +89,16 @@ export default tseslint.config(
             },
             {
               pattern: "@utils/**",
+              group: "internal",
+              position: "after",
+            },
+            {
+              pattern: "@assets/**",
+              group: "internal",
+              position: "after",
+            },
+            {
+              pattern: "@api/**",
               group: "internal",
               position: "after",
             },
