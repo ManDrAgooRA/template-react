@@ -3,10 +3,12 @@ import { useDispatch, useSelector } from "react-redux";
 
 import rootReducer from "./rootReducer";
 
+const { NODE_ENV } = import.meta.env;
+
 export const store = configureStore({
   reducer: rootReducer,
   middleware: (getDefaultMiddleware) => getDefaultMiddleware({ thunk: true }),
-  // DevTools: process.env.NODE_ENV !== "production",
+  devTools: NODE_ENV !== "production",
 });
 
 export type RootState = ReturnType<typeof store.getState>;
