@@ -42,6 +42,7 @@ export default tseslint.config(
       "react/react-in-jsx-scope": "off",
       "capitalized-comments": "error",
       "import/no-unresolved": "off",
+      "@typescript-eslint/ban-ts-comment": "warn",
       "import/order": [
         "error",
         {
